@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+#u{
+    display: flex;
+     justify-content: center ; 
+     height:32px;
+     align-items: center;
+}
+       
+.head p{
+    height:22px;
+    /* border: 1px solid 
+    red; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    
+   
+}
+.slide{
+    height:39px;
+    border: 1px solid 
+    rgb(85, 64, 64);
+    background-color: #3a2a7c;
+    margin-top: 0px;
+    text-align: center;
+}
+.headerimg{
+    display: flex;
+    /* border:1px solid blue; */
+    width: 70%;
+    height:40px;
+    margin:auto;
+    justify-content: center;
+}
+.headerimg>div>a>#div>img{
+    /* border: 1px solid blue; */
+    display: block;
+    width: 100%;
+    
+}
+.headerimg>div>a>#div{
+    
+    width: 100%;
+    /* padding: 1px; */
+    display: flex;
+    align-items: center;
+    height: 35px;
+    /* border: 1px solid black; */
+    
+}
+.headerimg>div{
+    width: 13%;
+    display: flex;
+    /* border: 2px solid red; */
+    height:35px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.header{
+    /* border:1px solid red; */
+    display: flex;
+    background-color: #e6e6e6;
+    height:45px;
+    justify-content: center;
+    align-items: center;
+}
+.ind{
+    /* border: 1px solid blue; */
+    width: 50px;
+    height:100%;
+    margin-right:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ind>p{
+    text-align: center;
+}
+.left{
+    width: 25%;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    /* border:1px solid blue; */
+    /* margin: 0px; */
+   
+}
+.left>div{
+    width:85%;
+    /* border: 1px solid purple; */
+}
+.left img{
+    height:40px;
+    /* border: 1px solid black; */
+    width: 78%;
+}
+.head1{
+    display: flex;
+    width: 96%;
+    margin:auto;
+    /* border:1px solid black; */
+    height:65px;
+    padding:15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.right{
+    width: 20%;
+    display: flex;
+    height:40px;
+    align-self: flex-start;
+  
+    text-align: right;
+    
+    justify-content: flex-end;
+    
+}
+.right .logo{
+    width: 20%;
+    
+    
+    margin-right: 5px;
+
+}
+.right a{
+    text-decoration: none;
+    color: black;
+}
+.right p{
+    font-size: 12px;
+    margin-top: 0px;
+    text-align: center;
+}
+.right>.logo>a>img{
+    height: 20px;
+    /* border:1px solid blue; */
+    width: 100%;
+    
+}
+.middle{
+    width:60%;
+    height: 45px;;
+    display: flex;
+    /* justify-content: space-between; */
+    /* border: 1px solid red; */
+}
+.middle>input{
+    height: 40px;;
+    width: 83%;
+    display: block;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    padding: 15px;;
+
+   
+
+}
+.hover{
+    display: flex;
+      width: 96%;
+      margin: auto;
+      height:50px;
+      /* border:2px solid red */
+      align-items: center;
+    justify-content: space-between;
+}
+.hover>div{
+    /* border:1px solid red; */
+    height: 20px;
+  
+}
+.hover a{
+    text-decoration: none;
+    color:black;
+    font-size: 13px;
+}
+.head{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.body1{
+    height : 700px ;
+    /* border: 1px solid red;  */
+    width : 96% ; 
+    margin : auto
+}
+.body1 img{
+    width : 100% ; 
+    height : 100% ; 
+}
+.body2 img{
+    width: 100%;
+    height: 100%;
+}
+.body2{
+    width: 96%;
+    margin : auto ; 
+    margin-top:10px ;
+
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 96%;
+    margin: auto;
+    margin-top: 13px;;
+    justify-content: center;
+    align-content: center;
+
+}
+.shop .data{
+    width: 100%;
+    height: 55px;
+    background-color: #3a2a7c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop .data a{
+    color: white;
+    font-size:29px ;
+    text-decoration: none;
+}
+.see{
+    width: 20%;
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: right;
+}
+.signup .see p{
+    font-family: "linotype-didot",TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif;
+   
+    font-weight: 400;
+    font-style: italic;
+    
+    font-size: 2.460318vw;
+    /* color: white; */
+}
+.signup{
+    /* border: 1px solid red; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 96%;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    
+    background-color: #3a2a7c;
+}
+.btn{
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 50px;
+    border-style: none;
+    border-radius: 5px;
+}
+.btn p{
+    font-family: "Montserrat","Inter Tight","Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.190476vw;
+    color: #3a2a7c;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+.center p{
+    font-size: 1.507937vw;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.body3{
+    width: 96%;
+    margin: auto;
+}
+.body img{
+    width: 100%;
+    height: 100%;
+}
+.body4{
+    width: 96%;
+    margin: auto;
+    margin-top: 30px;
+}
+.body4 img{
+    width: 100%;
+    height: 100%;
+}
+.body5{
+    width: 96%;
+    margin: auto;
+    height: 100%;
+}
+.body5 img{
+    width: 100%;
+    height: 100%;
+}
+.logolast{
+    width: 100%;
+}
+.logolast>div
+{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    border: 1px solid red;
+    align-items: center;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+}
+.logolast>div>div{
+    width: 6%;
+}
+.logolast>div>div>img{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div id="u">
+        <p>Enjoy our great international shipping rates</p>
+    </div>
+        <div class="slide">
+            slider
+        </div>
+    </div>
+    <div class="header">
+    <div class="headerimg">
+
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw9abec74c/oss-images/brand-header-images/os_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwaafbdd54/oss-images/brand-header-images/ww_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwbc6708db/oss-images/brand-header-images/rm_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://www.catherines.com/on/demandware.static/-/Sites-oss-Library/default/dwce39c953/oss-images/brand-header-images/ca_favicon.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw8e07f5e0/oss-images/brand-header-images/jl_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwdf4049fe/oss-images/brand-header-images/el_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw01e10ab2/oss-images/brand-header-images/jv_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwf83ae052/oss-images/brand-header-images/aa_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw741011b4/oss-images/brand-header-images/ia_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw74afbac5/oss-images/brand-header-images/sh_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwe78bd437/oss-images/brand-header-images/sa_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div><div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw1e45174f/oss-images/brand-header-images/bh_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw2cff73fa/oss-images/brand-header-images/ks_logo_uc.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.onestopplus.com/">
+                <div id="div">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw24710b29/oss-images/brand-header-images/fboutlet-090722.svg?yocs=j_" alt="">
+                </div>
+            </a>
+        </div>
+        
+       
+    </div>
+
+
+    <div class="ind">
+    <p>IND</p>
+
+    </div>
+    </div>
+    <div class="head">
+    <div class="head1">
+        <div class="left">
+            <div>
+                <a href="">
+            <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw57ae68ae/images/ca/logo.svg?yocs=j_" alt="">
+        </a>
+        </div>
+        </div>
+        <div class="middle">
+            <input type="text" placeholder="Keyword or catalog item#">
+            <button> </button>
+        </div>
+        
+        <div class="right">
+            <a href="">
+            <div class="logo"> 
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw93bd7266/images/common/icons/icon-catalog.svg?yocs=j_" alt="">
+            
+                 <p>CATALOG</p>
+                </a>
+            </div>
+            <div class="logo">
+                <a href=""> <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw3a534e16/images/common/icons/icon-card.svg?yocs=j__" alt="">
+                <p>CARD</p>
+            </a>
+            </div>
+            <div class="logo">
+                <a href=""> <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw8fc793b7/images/common/icons/icon-account.svg?yocs=j_" alt="">
+               
+            <p>SIGN IN</p>
+        </a>
+            </div>
+            <div class="logo">
+                <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_" alt="">
+            
+            <p>MY BAG</p>
+        </a> 
+            </div>
+             
+        </div>
+    </div>
+    <div class="head2">
+        <div class="hover">
+            <div>
+                <a id="h"href="">FEATURED</a>
+            </div>
+        
+        
+            <div>
+                <a href="">TOPS & SWEATER</a>
+            </div>
+        
+        
+            <div>
+                <a href="">BOTTOMS</a>
+            </div>
+       
+            <div>
+                <a href="">DRESSES</a>
+            </div>
+        
+            <div>
+                <a href="">ACTIVE</a>
+            </div>
+       
+            <div>
+                <a href="">COATS & JACKETS</a>
+            </div>
+        
+            <div>
+                <a href="">SLEEPWEAR</a>
+            </div>
+        
+            <div>
+                <a href="">SHOES & ACCESSORIES</a>
+            </div>
+       
+            <div>
+                <a href="">GYMWEAR</a>
+            </div>
+        
+            <div>
+                <a href="">HOME</a>
+            </div>
+        
+            <div>
+                <a href="">CLEARANCE</a>
+            </div>
+        </div>
+        
+
+
+    </div>
+    <div class="body1">
+        <a href="">
+        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwa190cb33/ca-images/homepage/2023/wk03/ca-0117-MainFeature_D.jpg?yocs=j_m_" alt="">
+    </a>
+    </div>
+    <div class="body2">
+        <a href="">
+            <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw599a69c1/ca-images/homepage/2023/wk03/ca-0117-BestOf_D.jpg?yocs=j_m_" alt="">
+        </a>
+    </div>
+    <div class="shop">
+        
+        <div class="data">
+           <a href="">SHOP TOYS</a>
+
+        </div>
+        
+       <div class="data">
+           <a href="">SHOP DRESSES</a>
+
+        </div>
+          <div class="data">
+           <a href="">SHOP BLOUSES</a>
+
+        </div>
+        <div class="data">
+           <a href="">SHOP SWEATER</a>
+
+        </div>
+        <div class="data">
+           <a href="">SHOP ACTIVEWEAR</a>
+
+        </div>
+        <div class="data">
+           <a href="">SHOP COATS & JACKETS</a>
+
+        </div>
+        <div class="data">
+           <a href="">SHOP TOYS</a>
+
+        </div>
+        <div class="data">
+           <a href="">SHOP LIZ&ME</a>
+
+        </div>
+                
+
+                        
+    </div>
+    <a href="">
+    <div class="signup">
+       
+        <div class="see">
+            <p>SEE IT FIRST!</p>
+        </div>
+        <div class="center">
+            <p>ENJOY EARLY ACCESS TO NEW ARRIVALS,OFFERS AND SALE ALERTS</p>
+        </div>
+        <div class="btn">
+            <p>SIGN UP FOR EMAILS</p>
+        </div>
+    
+    </div>
+    </a>
+    <div class="body3">
+        <a href="">
+            <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw4d7025e9/ca-images/homepage/2023/wk03/ca-0117-Wardrobe_D.jpg?yocs=j_m_" alt="">
+        </a>
+    </div>
+    <div class="body4">
+        <a href="">
+            <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw6ac564f6/ca-images/homepage/2023/wk03/ca-0117-Suprema_D.jpg?yocs=j_m_" alt="">
+        </a>
+    </div>
+    <div class="body5">
+        <a href="">
+            <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw552bea66/ca-images/homepage/2023/wk03/01-2023-CA-Outfitting-HP-Banner-011723_D.jpg?yocs=j_m_" alt="">
+        </a>
+    </div>
+    <hr>
+    <div class="logolast">
+        <div>
+            <div>
+                <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwc2f818ff/oss-images/footer/icon-instagram.svg?yocs=j_" alt="">
+            </a>
+            </div>
+            <div>
+                <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw8dc17bfd/oss-images/footer/icon-pinterest.svg?yocs=j_" alt="">
+            </a>
+            </div>
+            <div>
+                <a href="">
+                <img src="
+                https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw9f95e4f0/oss-images/footer/icon-facebook.svg?yocs=j_" alt="">
+            </a>
+            </div>
+            <div>
+                <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwb3966921/oss-images/footer/icon-twitter.svg?yocs=j_" alt="">
+            </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw96df2763/oss-images/footer/icon-youtube.svg?yocs=j_" alt="">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="lastdemo">
+        <div class="left">
+            <div class="img">
+                <img src="" alt="">
+            </div>
+            <h3>Request A Free Catalog</h3>
+            <p>Fresh New Style that Fit You Beautifully, Delivered Right To Your Home.</p>
+        </div>
+        <div class="right">
+            <div class="img">
+                <img src="" alt="">
+            </div>
+            <h3>Request A Free Catalog</h3>
+            <p>Fresh New Style that Fit You Beautifully, Delivered Right To Your Home.</p>
+        </div>
+    </div>
+</body>
+</html>
