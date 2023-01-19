@@ -1,0 +1,25 @@
+@media screen and (min-width :300px)  and (max-width : 600px){
+    .head{
+        height: 10px;
+        font-size:10px ;
+        text-align: center;
+        
+    }
+    #u{
+        display: flex;
+        height: 15px;
+        align-items: center;
+    }
+    .head p{
+        height: 10px;
+        text-align: center
+    }
+    .headerimg {
+        display: flex;
+        /* border:1px solid blue; */
+        width: 70%;
+        height: 20px;
+        margin: auto;
+        justify-content: center;
+    }
+}
