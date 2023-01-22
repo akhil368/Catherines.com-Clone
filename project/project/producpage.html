@@ -1,71 +1,1647 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="productpage.css">
     <style>
-        .body
-        {
+        .body {
             display: flex;
+            box-sizing: border-box;
+            margin-top: 40px;
+        }
 
-        }
-        .imgleft{
+        .imgleft {
             width: 40%;
+            /* border: 1px solid red; */
+            text-align: right;
+            margin-right: 30px;
+            height: 600px;
+            display: flex;
         }
-        .rightside{
+
+        .rightside {
             width: 55%;
         }
-        .rightside h2{
-            width: 20%;
+
+        .rightside h2 {
+            width: 100%;
+            font-style: italic;
+            font-size: 30px;
         }
-        .rightside h3{
+
+        .rightside h3 {
             width: 30%;
+            font-size: 30px;
         }
-        .per{
+
+        .rightside .per {
             font-weight: 500;
+            font-size: 20px;
+            color: purple;
         }
-        .rightside p:nth-child(2)
-        {
-            font-size:20px ;
+
+        .rightside p:nth-child(2) {
+            font-size: 20px;
         }
+
+        .imgleft>.imgupper div {
+            width: 100%;
+            /* height: 100%; */
+            height: 100px;
+            margin-top: 30px;
+        }
+
+        .imgleft .imgupper {
+            width: 20%;
+            ;
+        }
+
+        .color {
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .color span {
+            font-weight: 100;
+        }
+
+        .sizef {
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .sizef span {
+            font-weight: 100;
+        }
+
+        .size {
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .size span {
+            font-weight: 100;
+        }
+
+        .rightside h5 {
+            font-size: 30px;
+            margin: 0px;
+        }
+        .rightside button{
+            width: 50%;
+            font-size:30px ;
+            font-weight: 600;
+        }
+        .dropdown {
+            position: absolute;
+            width: 100%;
+           
+            margin-top: 0.3rem;
+            background: rgb(255, 253, 253);
+
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(0.5rem);
+            transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+        }
+        .show {
+     visibility: visible;
+     opacity: 1;
+    transform: translateY(0rem);
+        }   
+
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
     </style>
 </head>
+
 <body>
-    <div class="body">
-        <div class="imgleft">
-            <img src="" alt="">
+    <div class="headupper">
+        <div id="u">
+            <p>Enjoy our great international shipping rates</p>
         </div>
-        <div class="rightside">
-            <h2>layering Tank</h2>
-            <h3>1300</h3>
-            <p class="per">This Perfect Price style reflect our everday lowest price.Discounts and Coupons are not valid</p>
-            <p>Color : <span>Navy</span></p>
-            <p>Size Family:<span>Women's</span></p>
-            <p>Size : <span>XL</span></p>
-            <h5>Description & Details</h5>
-            <p>Catherines
+        <div class="slide">
+            <div class="slideshow-container">
 
-                Item Number: Please Select Size
-                This pull-on Suprema® capri is a timeless essential you'll wear on repeat season after season.
-                
-                FABRIC: Our famous Suprema® is premium quality cotton loved for its stretch and durability. Soft to the touch, the fabric is designed to retain its shape and color wash after wash.
-                
-                FIT: An easy, comfortable design that skims the body. Covered elastic waistband. Pockets. No closure, easy pull-on style.
-                
-                95% Cotton, 5% Spandex
-                Machine Wash
-                Imported Plus Size Suprema®
-                Inseam Length: Petite 19", Regular 21", Tall 24"
-                Plus Sizes 0X–6X, Petites 0XWP–5XWP, Tall 0XWT-5XWT</p>
-            <h5>Shipping & Returns</h5>
-            <p>Free exchanges within 60 days of purchase, excluding final sale items.
+                <div class="mySlides">
+                    <p><a href="">
+                            SPRING PREVIEW UP TO 40% OFF NEW ARRIVALS | Details | View All Deals
+                        </a></p>
+                    <!-- <p class="author">- John Keats</p> -->
+                </div>
 
-                Our goal is your complete satisfaction! If we have not delighted you, unworn, unwashed or defective merchandise may be exchanged or returned within 60 days of ship date. We are happy to process an exchange at no additional shipping expense for a new size, color, or different item. If you prefer to return, you will receive a refund of the purchase price (less shipping and prepaid return label charges). A refund or exchange will not be processed for products that do not meet exchange or refund criteria, are received after 60 days from the original ship date, or are designated as final sale product.
-                
-                Exchanges exclude items shipped directly from 3rd party brands, items purchased through Amazon, Walmart, eBay, or other external websites, or purchases made using PayPal.</p>
+                <div class="mySlides">
+                    <p>
+                        <a href="">
+                            BEST OF WINTER SALE FROM $14.99 | Details | View All Deals</a>
+                    </p>
+                    <!-- <p class="author">- Ernest Hemingway</p> -->
+                </div>
+
+                <div class="mySlides">
+
+                    <p>
+                        <a href="">SAVE $10, SIGN UP FOR CATHERINES REWARDS TODAY | Details | View All Deals.</a>
+                    </p>
+                    <!-- <p class="author">- Thomas A. Edison</p> -->
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+
         </div>
     </div>
+    <div class="header">
+        <div class="headerimg">
+
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw9abec74c/oss-images/brand-header-images/os_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwaafbdd54/oss-images/brand-header-images/ww_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwbc6708db/oss-images/brand-header-images/rm_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://www.catherines.com/on/demandware.static/-/Sites-oss-Library/default/dwce39c953/oss-images/brand-header-images/ca_favicon.svg"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw8e07f5e0/oss-images/brand-header-images/jl_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwdf4049fe/oss-images/brand-header-images/el_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw01e10ab2/oss-images/brand-header-images/jv_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwf83ae052/oss-images/brand-header-images/aa_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw741011b4/oss-images/brand-header-images/ia_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw74afbac5/oss-images/brand-header-images/sh_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dwe78bd437/oss-images/brand-header-images/sa_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw1e45174f/oss-images/brand-header-images/bh_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw2cff73fa/oss-images/brand-header-images/ks_logo_uc.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.onestopplus.com/">
+                    <div id="div">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/-/Sites-oss-Library/default/dw24710b29/oss-images/brand-header-images/fboutlet-090722.svg?yocs=j_"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+
+        <div class="ind">
+            <p>IND</p>
+
+        </div>
+    </div>
+    <div class="head">
+        <div class="head1">
+            <div class="left">
+                <div>
+                    <a href="">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw57ae68ae/images/ca/logo.svg?yocs=j_"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+                <input type="text" placeholder="Keyword or catalog item#">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+
+            <div class="right">
+
+                <div class="logo">
+                    <a href="">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw93bd7266/images/common/icons/icon-catalog.svg?yocs=j_"
+                            alt="">
+
+                        <p>CATALOG</p>
+                    </a>
+                </div>
+
+
+                <div class="logo">
+                    <a href=""> <img
+                            src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw3a534e16/images/common/icons/icon-card.svg?yocs=j__"
+                            alt="">
+                        <p>CARD</p>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="login.html" target="_blank"> <img
+                            src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw8fc793b7/images/common/icons/icon-account.svg?yocs=j_"
+                            alt="">
+
+                        <p>SIGN IN</p>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_"
+                            alt="">
+
+                        <p>MY BAG</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="head2">
+        <div class="hover">
+            <div>
+                <a id="h" href="">FEATURED
+                    <div class="featured">
+
+                        <div>
+                            <a href="">
+                                <h3>NEW & NOW</h3>
+                                <li> BEst of wintwe $24.99</li>
+                                <li> catherines outfit made easy</li>
+                                <li> Gift card</li>
+                                <li> cold Weather Shop</li>
+                            </a>
+                        </div>
+                        <div><a href="">
+                                <h3>SPECIAL SIZES</h3>
+                                <li>Women's & PLus</li>
+                                <li>Petties</li>
+                                <li>Tall Bottoms</li>
+                                <li>curvy</li>
+                            </a>
+                        </div>
+                        <div><a href="">
+                                <h3>COLLECTIONS</h3>
+                                <li>Supreme & PErfect</li>
+                                <li>Liz & ME</li>
+                                <li>Curvy Collection</li>
+                                <li>AnvyWear</li>
+                            </a>
+                        </div>
+                        <div><a href="">
+                                <h3>COLLECTIONS</h3>
+                                <li>Supreme & PErfectPrice</li>
+                                <li> Liz & Me</li>
+                                <li>Any Waer</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <h3>NEW ARRIVAL</h3>
+                                <li>All New Arrivals</li>
+                                <li>Tops</li>
+                                <li>Bottoms</li>
+                                <li>Dressers</li>
+                                <li>Coats & Jackets</li>
+                                <li>Sleepwear</li>
+                                <li>Intimates</li>
+                                <li>SHOES</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <h3>Best SELLERS</h3>
+                                <li>All Best Sellers</li>
+                                <li>Tops</li>
+                                <li>Bottoms</li>
+                                <li>Dresses</li>
+                                <li>Coats & Jackets</li>
+                                <li>Sleepwear
+                                <li>
+                                <li>Intimates</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <h3>FEATURED BRANDS</h3>
+                                <li>Catherines</li>
+                                <li>Roaman's</li>
+                                <li>Jessica London
+
+                                </li>
+                                <li>Ellos</li>
+                                <li>Disney</li>
+                                <li>Peanuts</li>
+                                <li>Sketchers</li>
+                                <li>Playtex
+
+                                </li>
+                                <li>Glamorise</li>
+                                <li>Dream & Co</li>
+                                <li>Comfortview</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <h3>SALES & OFFERS</h3>
+
+                                <li>Clearance-Up To 80% OFF</li>
+                                <li>Final Sale</li>
+                                <li>New Markdowns</li>
+                                <li>Offers & Coupons</li>
+                                <li>Catherines Reward</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <h3>PRICE</h3>
+                                <li>Under $20</li>
+                                <li>$20-$39.99</li>
+                                <li>$40-$79.99</li>
+                                <li>$80-$99.99</li>
+                            </a>
+                        </div>
+
+
+                        <!-- </a> -->
+                    </div>
+            </div>
+
+            <div>
+                <a href="">TOPS & SWEATER</a>
+                <div class="featured">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+
+            <div>
+                <a href="">BOTTOMS</a>
+                <div class="featured">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">DRESSES</a>
+                <div class="featured">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">ACTIVE</a>
+                <div class="featured">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">COATS & JACKETS</a>
+                <div class="coat">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">SLEEPWEAR</a>
+                <div class="sleep">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">SHOES & ACCESSORIES</a>
+                <div class="shoes">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">GYMWEAR</a>
+                <div class="gym">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">HOME</a>
+                <div class="home">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+
+            <div>
+                <a href="">CLEARANCE</a>
+                <div class="last">
+
+                    <div>
+                        <a href="">
+                            <h3>NEW & NOW</h3>
+                            <li> BEst of wintwe $24.99</li>
+                            <li> catherines outfit made easy</li>
+                            <li> Gift card</li>
+                            <li> cold Weather Shop</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>SPECIAL SIZES</h3>
+                            <li>Women's & PLus</li>
+                            <li>Petties</li>
+                            <li>Tall Bottoms</li>
+                            <li>curvy</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfect</li>
+                            <li>Liz & ME</li>
+                            <li>Curvy Collection</li>
+                            <li>AnvyWear</li>
+                        </a>
+                    </div>
+                    <div><a href="">
+                            <h3>COLLECTIONS</h3>
+                            <li>Supreme & PErfectPrice</li>
+                            <li> Liz & Me</li>
+                            <li>Any Waer</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>NEW ARRIVAL</h3>
+                            <li>All New Arrivals</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dressers</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear</li>
+                            <li>Intimates</li>
+                            <li>SHOES</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>Best SELLERS</h3>
+                            <li>All Best Sellers</li>
+                            <li>Tops</li>
+                            <li>Bottoms</li>
+                            <li>Dresses</li>
+                            <li>Coats & Jackets</li>
+                            <li>Sleepwear
+                            <li>
+                            <li>Intimates</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>FEATURED BRANDS</h3>
+                            <li>Catherines</li>
+                            <li>Roaman's</li>
+                            <li>Jessica London
+
+                            </li>
+                            <li>Ellos</li>
+                            <li>Disney</li>
+                            <li>Peanuts</li>
+                            <li>Sketchers</li>
+                            <li>Playtex
+
+                            </li>
+                            <li>Glamorise</li>
+                            <li>Dream & Co</li>
+                            <li>Comfortview</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>SALES & OFFERS</h3>
+
+                            <li>Clearance-Up To 80% OFF</li>
+                            <li>Final Sale</li>
+                            <li>New Markdowns</li>
+                            <li>Offers & Coupons</li>
+                            <li>Catherines Reward</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <h3>PRICE</h3>
+                            <li>Under $20</li>
+                            <li>$20-$39.99</li>
+                            <li>$40-$79.99</li>
+                            <li>$80-$99.99</li>
+                        </a>
+                    </div>
+
+
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="body">
+        <div class="imgleft">
+
+                <div class="imgupper">
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw373c4863/images/hi-res/2642_33781_mc_2217.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw75aceec3/images/on-hover/2642_33781_ma_0001.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dwae311f56/images/alternate/2642_33781_ma_0002.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw72da77d9/images/alternate/2642_33781_ma_0003.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
+                            alt="">
+                    </div>
+
+                </div>
+
+                <div class="imgright">
+                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw373c4863/images/hi-res/2642_33781_mc_2217.jpg?sw=556&sh=680&sm=fit&yocs=j_m__"
+                        alt="">
+
+
+                </div>
+            </div>
+            <div class="rightside">
+                <h2>Georgette Buttonfront Tie Sleeve Cafe Blouse</h2>
+                <h3>₹1300</h3>
+                <p class="per">This Perfect Price style reflect our everday lowest price.Discounts and Coupons are not
+                    valid</p>
+                <p class="color">Color : <span>Navy</span></p>
+                <p class="sizef"> Size Family:<span>Women's</span></p>
+                <p class="size"> Size : <span>XL</span></p>
+
+
+                <h4> <button>
+                    ADD TO CART</button></h4>
+                <button class="btn" id="btn">Description & Details 
+                    <i class="bx bx-chevron-down" id="arrow"></i>
+                </button>
+                <p class="dropdown" id="dropdown">Catherines
+
+                    Item Number: Please Select Size
+                    This pull-on Suprema® capri is a timeless essential you'll wear on repeat season after season.
+
+                    FABRIC: Our famous Suprema® is premium quality cotton loved for its stretch and durability. Soft to
+                    the touch, the fabric is designed to retain its shape and color wash after wash.
+
+                    FIT: An easy, comfortable design that skims the body. Covered elastic waistband. Pockets. No
+                    closure, easy pull-on style.
+
+                    95% Cotton, 5% Spandex
+                    Machine Wash
+                    Imported Plus Size Suprema®
+                    Inseam Length: Petite 19", Regular 21", Tall 24"
+                    Plus Sizes 0X–6X, Petites 0XWP–5XWP, Tall 0XWT-5XWT</p>
+                <button class="btn" id="btn">Shipping & Returns
+                    <i class="bx bx-chevron-down" id="arrow"></i>
+                </button>
+                <p class="dropdown" id="dropdown">Free exchanges within 60 days of purchase, excluding final sale items.
+
+                    Our goal is your complete satisfaction! If we have not delighted you, unworn, unwashed or defective
+                    merchandise may be exchanged or returned within 60 days of ship date. We are happy to process an
+                    exchange at no additional shipping expense for a new size, color, or different item. If you prefer
+                    to return, you will receive a refund of the purchase price (less shipping and prepaid return label
+                    charges). A refund or exchange will not be processed for products that do not meet exchange or
+                    refund criteria, are received after 60 days from the original ship date, or are designated as final
+                    sale product.
+
+                    Exchanges exclude items shipped directly from 3rd party brands, items purchased through Amazon,
+                    Walmart, eBay, or other external websites, or purchases made using PayPal.</p>
+            </div>
+        </div>
 </body>
+
+<script>
+    const dropdownBtn = document.getElementById("btn");
+const dropdownMenu = document.getElementById("dropdown");
+const toggleArrow = document.getElementById("arrow");
+
+// Toggle dropdown function
+const toggleDropdown = function () {
+  dropdownMenu.classList.toggle("show");
+  toggleArrow.classList.toggle("arrow");
+};
+
+// Toggle dropdown open/close when dropdown button is clicked
+dropdownBtn.addEventListener("click", function (e) {
+  e.stopPropagation();
+  toggleDropdown();
+});
+
+// Close dropdown when dom element is clicked
+document.documentElement.addEventListener("click", function () {
+  if (dropdownMenu.classList.contains("show")) {
+    toggleDropdown();
+  }
+});
+</script>
 </html>
