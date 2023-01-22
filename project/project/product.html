@@ -5,61 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="product.css">
-    <style>
-         #container{
-        display: grid;
-        width: 75%;
-        row-gap: 20px;
-        grid-template-columns: repeat(3,1fr);
-        
-    }
-    #container div{
-        /* border: 1px solid red; */
-        width: 90%;
-    }
-    #container div img:nth-child(1)
-    {
-        width: 100%;
-    }
-    #container div img:nth-child(2)
-    {
-        width: 40%;
-    }
-    #container div p{
-        
-        padding: 10px;
-        margin: 0px;
-        font-size: 25px;
-        /* border: 1px solid purple; */
-        font-size: 29px;
-    }
-    #container div h4{
-        padding: 10px;
-        margin: 0px;
-        /* border: 2px solid black; */
-        font-size: 30px;
-    }
-    #container div h3{
-        padding: 10px;
-        margin: 0px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        /* border: 2px solid black; */
-        font-size: 40px;
-    }
-    #container div p:hover
-    {
-        text-decoration: underlines;
-    }
-    .product{
-        display: flex;
-        margin-top: 30px;
-    }
-    .product .leftside{
-        width: 25%;
-    }
-    </style>
+<style>
+
+    #container{
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+#container div{
+    /* border: 1px solid red; */
+    width: 90%;
+}
+#container div img:nth-child(1)
+{
+    width: 100%;
+}
+#container div img:nth-child(2)
+{
+    width: 40%;
+}
+#container div p{
+    
+    padding: 10px;
+    margin: 0px;
+    font-size: 25px;
+    /* border: 1px solid purple; */
+    font-size: 29px;
+}
+#container div h4{
+    padding: 10px;
+    margin: 0px;
+    /* border: 2px solid black; */
+    font-size: 30px;
+}
+#container div h3{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* border: 2px solid black; */
+    font-size: 40px;
+}
+.product>#main{
+    width: 75%;
+}
+#main{
+    color: black;
+}
+#main:hover
+{
+    text-decoration: underline;
+}
+#container div p:hover
+{
+    text-decoration: underlines;
+}
+.product{
+    display: flex;
+    margin-top: 30px;
+}
+.product .leftside{
+    width: 25%;
+}
+.leftdata li{
+        list-style: none;
+        margin-top: 15px;
+
+}
+.leftdata h3{
+    margin-left: 15px;
+}
+.leftdata a{
+    font-size: 25px;
+    margin: 15px;
+    /* border: 1x solid red; */
+    color: black;
+}
+.leftdata li:hover{
+    text-decoration: underline;
+}
+#price{
+    display: block;
+    width: 40%;
+    height: 30px;
+    margin-left: 20px;
+}
+</style>        
 </head>
 <body>
     <body>
@@ -69,9 +105,11 @@
             </div>
             <div class="slide">
                 <div class="slideshow-container">
-    
+                    
                     <div class="mySlides">
-                        <p><a href="">
+                        <p>
+                        <a href="">
+                    
                             SPRING PREVIEW UP TO 40% OFF NEW ARRIVALS | Details | View All Deals
                         </a></p>
                         <!-- <p class="author">- John Keats</p> -->
@@ -234,15 +272,15 @@
             <div class="head1">
                 <div class="left">
                     <div>
-                        <a href="">
+                        <a href="index.html">
                             <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw57ae68ae/images/ca/logo.svg?yocs=j_"
                                 alt="">
                         </a>
                     </div>
                 </div>
                 <div class="middle">
-                    <input type="text" placeholder="Keyword or catalog item#">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" id="search"placeholder="Keyword or catalog item#">
+                    <button id="button"type="submit"><i class="fa fa-search"></i></button>
                 </div>
     
                 <div class="right">
@@ -273,10 +311,10 @@
                         </a>
                     </div>
                     <div class="logo">
-                        <a href="">
+                        <a href="cart1.html">
                             <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_"
                                 alt="">
-    
+
                             <p>MY BAG</p>
                         </a>
                     </div>
@@ -1481,11 +1519,40 @@
         <div class="product">
     
             <div class="leftside">
-                PLUS Sixe best Seller
+                <div class="leftdata">
+
+                    <!-- <h2></h2>
+                     -->
+                     <select name="Price" id="price">
+                        <option value="price"></option>
+
+                    <option value="high" id="high">High to Low</option>
+                    <option value="low" id="high">Low</option>
+                     </select>
+                    <h3>CATEGORY</h3>
+                    <li><a href="">Suprema & Perfect Price</a></li>
+                    <li><a href="">Amazing Deals</a></li>
+                    <li><a href="">Best Sellers</a></li>
+                    <li><a href="">New Arrivals</a></li>
+                    <li><a href="">AnvyWear</a></li>
+                    <li><a href="">Wear to Work</a></li>
+                    <li><a href="">Petites</a></li>
+                    <li><a href="">Find Your Fit Guide</a></li>
+                    <li><a href="">Curvy</a></li>
+                    <li><a href="">Liz & Me</a></li>   
+                    <li><a href="">Jessica London</a></li>
+                    <li><a href="">Ellos</a></li>
+                    <li><a href="">June+Vie</a></li>
+                    <li><a href="">Roama's</a></li>
+                    <li><a href="">Disney Shop</a></li>
+                </div>
             </div>
+            <a href="producpage.html" id="main">
             <div id="container">
-                
+                          
             </div>
+        </a>
+
         </div>
         <div class="footer">
 
@@ -1675,6 +1742,14 @@
     
 </body>
 <script>
+
+let sort=document.getElementById("price")
+
+
+
+
+
+
 let arr=[
   {
   price: 7300,
@@ -2003,7 +2078,8 @@ let arr=[
   },
  
 ]
-
+let btn=document.querySelector("button") 
+let search=document.getElementById("search")
 let cont=document.getElementById("container")
 display(arr)
 function display(data)
@@ -2036,6 +2112,95 @@ function display(data)
 
 
     });
+    btn.addEventListener("click",function()
+{
+    let filtered=arr.filter((element)=>
+    {
+        if(element.name.toUpperCase().includes(search.value.toUpperCase())==true)
+        {
+                return true
+        }
+        else{
+            return false
+        }
+    })
+    display(filtered)
+})
+let y=arr
+sort.addEventListener("change",function()
+{
+    if(sort.value=="")
+    {
+        display(arr)
+    }
+    else if(sort.value=="high")
+    {
+        let x=y.sort((a,b)=>{
+            
+            if(a.price<b.price)
+            {
+                return 1
+            }
+            if(a.price >b.price)
+            {
+                return -1
+            }
+            return 0
+        })
+        display(x)
+    }
+    else if(sort.value=="low")
+    {
+        let x=y.sort((a,b)=>{
+            if(a.price>b.price)
+            {
+                return 1
+            }
+            if(a.price <b.price)
+            {
+                return -1
+            }
+            return 0
+        })
+        display(x)
+    }
+    // console.log(arr)
+})
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+window.onload= function () {
+ setInterval(function(){ 
+     plusSlides(1);
+ }, 5000);
+ }
+
 }
 </script>
+<!-- <script src="product.script"></script> -->
 </html>

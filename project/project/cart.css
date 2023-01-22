@@ -24,8 +24,6 @@ red; */
 
 }
 
-
-
 .headerimg {
     display: flex;
     /* border:1px solid blue; */
@@ -930,65 +928,13 @@ a {
 .dot:hover {
     background-color: white;
 }
-.mySlides>p>a
+.slideshow-container p a
 {
 color: white;
 }
 .slideshow-container p a:hover
 {
     text-decoration:underline ;
-}
-#container{
-    display: grid;
-    width: 75%;
-    row-gap: 20px;
-    grid-template-columns: repeat(3,1fr);
-    
-}
-#container div{
-    /* border: 1px solid red; */
-    width: 90%;
-}
-#container div img:nth-child(1)
-{
-    width: 100%;
-}
-#container div img:nth-child(2)
-{
-    width: 40%;
-}
-#container div p{
-    
-    padding: 10px;
-    margin: 0px;
-    font-size: 25px;
-    /* border: 1px solid purple; */
-    font-size: 29px;
-}
-#container div h4{
-    padding: 10px;
-    margin: 0px;
-    /* border: 2px solid black; */
-    font-size: 30px;
-}
-#container div h3{
-    padding: 10px;
-    margin: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    /* border: 2px solid black; */
-    font-size: 40px;
-}
-#container div p:hover
-{
-    text-decoration: underlines;
-}
-.product{
-    display: flex;
-    margin-top: 30px;
-}
-.product .leftside{
-    width: 25%;
 }
 
 

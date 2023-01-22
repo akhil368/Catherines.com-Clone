@@ -327,6 +327,18 @@ let arr=[
  
 ]
 let btn=document.querySelector("button") 
+let search=document.getElementById("search")
+
+btn.addEventListener("click",function()
+{
+    let filtered=arr.filter((element)=>
+    {
+        if(element.name.toUpperCase().includes(search.ariaValueMax.toUpperCase())===true)
+        {
+                display()
+        }
+    })
+})
 console.log(arr[1].price)
 
 var slideIndex = 1;

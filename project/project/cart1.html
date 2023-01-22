@@ -1,137 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="cart.css">
     <style>
-        .body {
-            display: flex;
-            box-sizing: border-box;
-            margin-top: 40px;
-        }
-
-        .imgleft {
-            width: 40%;
+        .cont {
+            /* display: ; */
+            width: 90%;
+            margin-left: 60px;
             /* border: 1px solid red; */
+        }
+
+        .contupper {
+            display: flex;
+
+            font-size: 20px;
+            /* border: 1px solid red; */
+
+            justify-content: space-evenly;
+        }
+
+        .cont .contlower .img {
+            width: 10%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .cont .contlower .img img {
+            width: 100%;
+        }
+
+        .cont .contlower .data {
+            width: 20%;
+            margin-right: 90px;
+            /* border: 1px solid black; */
+        }
+
+        .cont .contlower .img .data span {
+            font-weight: 400;
+        }
+
+        .cont .contlower {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .cont .contlower .qty {
+            width: 10%;
+            border: 1px
+                /* solid black; */
+        }
+
+        .cont .contlower .qty input {
+            display: block;
+            height: 40px;
+            width: 50%;
+        }
+
+        .corner {
+
+            width: 20%;
+            margin-right: 0px;
+            /* border: 1px solid black; */
+        }
+
+        .corner p {
+            width: 70%;
             text-align: right;
-            margin-right: 30px;
-            height: 600px;
+            /* border: 1px solid blue; */
+        }
+
+        .upper {
+            margin-top: 50px;
+            /* border: 1px solid black; */
+            width: 90%;
+            display: flex;
+            margin-left: 60px;
+            justify-content: space-between;
+        }
+
+        .upper p {
+            font-size: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .bodyel {
             display: flex;
         }
 
-        .rightside {
-            width: 55%;
+        .bodyleft {
+            width: 70%;
         }
 
-        .rightside h2 {
+        .bodyright {
+            width: 25%;
+        }
+
+        .bodyright .middle {
+            display: flex;
             width: 100%;
-            font-style: italic;
-            font-size: 30px;
+            justify-content: space-between;
+            /* border: 1px solid red; */
         }
 
-        .rightside h3 {
-            width: 30%;
-            font-size: 30px;
+        .bodyright .total {
+            padding: 20px;
+            /* border: 1px solid black; */
         }
 
-        .rightside .per {
+        .bodyright .secure {
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .checkout {
+            width: 100%;
+            height: 60px;
+            background-color: #3a2a7c;
+            border: none;
+            font-size: 25px;
             font-weight: 500;
-            font-size: 15px;
-            color: purple;
+            color: white;
         }
 
-        .rightside p:nth-child(2) {
-            font-size: 20px;
-        }
-
-        .imgleft>.imgupper div {
+        .text {
+            margin-top: 10px;
+            /* border: 1px solid black; */
             width: 100%;
-            /* height: 100%; */
-            height: 100px;
-            margin-top: 30px;
         }
 
-        .imgleft .imgupper {
-            width: 20%;
-            ;
+        .bodyright .image {
+            display: flex;
+            justify-content: space-between;
         }
-
-        .color {
-            font-size: 20px;
-            font-weight: 900;
-        }
-
-        .color span {
-            font-weight: 100;
-        }
-
-        .sizef {
-            font-size: 20px;
-            font-weight: 900;
-        }
-
-        .sizef span {
-            font-weight: 100;
-        }
-
-        .size {
-            font-size: 20px;
-            font-weight: 900;
-        }
-
-        .size span {
-            font-weight: 100;
-        }
-
-        .rightside h5 {
-            font-size: 30px;
-            margin: 0px;
-        }
-        .rightside button{
-            width: 50%;
-            font-size:30px ;
-            font-weight: 600;
-        }
-        .dropdown {
-            position: absolute;
-            width: 50%;
-           font-size: 19px;
-            margin-top: 0.3rem;
-            background: rgb(255, 253, 253);
-
-            visibility: hidden;
-            opacity: 0;
-            transform: translateY(0.5rem);
-            transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
-        }
-        .show {
-     visibility: visible;
-     opacity: 1;
-    transform: translateY(0rem);
-        }   
-
-.arrow {
-  transform: rotate(180deg);
-  transition: 0.2s ease;
-}
-/* .myslides p a {
-    color: white;
-} */
-#button{
-    display: block;
-    padding: 10px;
-    height: 50px;
-    margin-bottom: 40px;
-}
     </style>
 </head>
-
 <body>
     <div class="headupper">
         <div id="u">
@@ -144,7 +159,7 @@
                     <p><a href="">
                             SPRING PREVIEW UP TO 40% OFF NEW ARRIVALS | Details | View All Deals
                         </a></p>
-                   
+                    <!-- <p class="author">- John Keats</p> -->
                 </div>
 
                 <div class="mySlides">
@@ -152,7 +167,7 @@
                         <a href="">
                             BEST OF WINTER SALE FROM $14.99 | Details | View All Deals</a>
                     </p>
-                  
+                    <!-- <p class="author">- Ernest Hemingway</p> -->
                 </div>
 
                 <div class="mySlides">
@@ -306,15 +321,15 @@
         <div class="head1">
             <div class="left">
                 <div>
-                    <a href="index.html">
+                    <a href="product.html">
                         <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw57ae68ae/images/ca/logo.svg?yocs=j_"
                             alt="">
                     </a>
                 </div>
             </div>
             <div class="middle">
-                <input type="text" placeholder="Keyword or catalog item#">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" id="search" placeholder="Keyword or catalog item#">
+                <button id="button" type="submit"><i class="fa fa-search"></i></button>
             </div>
 
             <div class="right">
@@ -345,7 +360,7 @@
                     </a>
                 </div>
                 <div class="logo">
-                    <a href="cart1.html">
+                    <a href="">
                         <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.324/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_"
                             alt="">
 
@@ -359,11 +374,11 @@
     <div class="head2">
         <div class="hover">
             <div>
-                <a id="h" href="">FEATURED
+                <a id="h" href="product.html">FEATURED
                     <div class="featured">
 
                         <div>
-                            <a href="">
+                            <a href="product.html">
                                 <h3>NEW & NOW</h3>
                                 <li> BEst of wintwe $24.99</li>
                                 <li> catherines outfit made easy</li>
@@ -1550,618 +1565,325 @@
 
 
 
+    </div>
+    <div class="bodyel">
+        <div class="bodyleft">
+            <div class="upper">
+                <p>MY SHOPPING BAG</p>
+                <p><a href="">VIEW BAG ID</a>
+                </p>
+            </div>
+            <div class="cont">
+                <div class="contupper">
+                    <p>Item</p>
+                    <p>Qty</p>
 
-    <div class="body">
-        <div class="imgleft">
-
-                <div class="imgupper">
-                    <div>
-                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw373c4863/images/hi-res/2642_33781_mc_2217.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
-                            alt="">
-                    </div>
-                    <div>
-                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw75aceec3/images/on-hover/2642_33781_ma_0001.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
-                            alt="">
-                    </div>
-                    <div>
-                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dwae311f56/images/alternate/2642_33781_ma_0002.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
-                            alt="">
-                    </div>
-                    <div>
-                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw72da77d9/images/alternate/2642_33781_ma_0003.jpg?sw=140&sh=140&sm=fit&yocs=j_m_"
-                            alt="">
-                    </div>
+                    <p>Subtotal</p>
 
                 </div>
+                <hr>
+                <div class="contlower">
 
-                <div class="imgright">
-                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw39a449f1/images/on-hover/2607_33779_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_"
-                        alt="">
+                    <div class="img">
+                        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw39a449f1/images/on-hover/2607_33779_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_"
+                            alt="">
 
+                    </div>
+                    <div class="data">
+                        <p>Catherines</p>
+                        <h2>Suprema® Tank</h2>
+                        <p>#2626-33477-9999</p>
+                        <p id="p">Color : <span>Brown</span></p>
+                        <p id="p">Size : <span>1x</span></p>
+                        <p id="p">Availbility <span>In Stock</span> </p>
+                        <p id="p ">Price : <span id="pr">1200</span></p>
+                    </div>
+                    <div class="qty">
+                        <input id="qty" type="number">
+                    </div>
+                    <h3 id="prices">1200</h3>
 
+                    <div class="corner">
+                        <p><a href="">Edit</a></p>
+                        <p><a href="">Add to Wishlist</a></p>
+                        <p><a href="">Remove</a></p>
+                    </div>
                 </div>
+
+                <hr>
             </div>
-            <div class="rightside">
-                <h2>Suprema® Tank</h2>
-                <h3>₹7300</h3>
-                <p class="per">This Perfect Price style reflect our everday lowest price.Discounts and Coupons are not
-                    valid</p>
-                <p class="color">Color : <span>Browne</span></p>
-                <p class="sizef"> Size Family:<span>Women's</span></p>
-                <p class="size"> Size : <span>XL</span></p>
+        </div>
+        <div class="bodyright">
+            <div class="total">
+                <h2>Order Summary</h2>
+                <hr>
+                <div class="middle">
+                    <p>Subtotal</p>
+                    <p id="subtotal">1200</p>
+                </div>
+                <div class="secure">
+                    <p>SECURE CHECKOUT</p>
+                </div>
+                <button class="checkout">CHECKOUT</button>
+                <h4>+ENTER PROMO OR REWARDS CODE</h4>
+            </div>
+            <div class="text">
+                *Tax fees are estimated. Final tax fees will be calculated when your order is shipped and will be stated
+                in your shipping confirmation email.
+            </div>
+            <hr>
+            <div class="payment">
+                <p>We Accept payments from</p>
+                <div class="image">
+                    <div><img
+                            src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/on/demandware.static/-/Sites-oss-Library/default/dw353bc4fa/bh-images/checkout/visa-card.png?yocs=j_"
+                            alt=""></div>
+                    <div><img
+                            src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/on/demandware.static/-/Sites-oss-Library/default/dw5daf0fc6/bh-images/checkout/master-card.png?yocs=j_"
+                            alt=""></div>
+                    <div><img
+                            src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/on/demandware.static/-/Sites-oss-Library/default/dw6431f30b/bh-images/checkout/amex-card.png?yocs=j_"
+                            alt=""></div>
+                    <div><img
+                            src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/on/demandware.static/-/Sites-oss-Library/default/dw829d6152/bh-images/checkout/discover-card.png?yocs=j_"
+                            alt=""></div>
+                    <div><img
+                            src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.328/on/demandware.static/-/Sites-oss-Library/default/dw966357b3/bh-images/checkout/paypal-logo.png?yocs=j_"
+                            alt=""></div>
+                </div>
+                <hr>
+                <p>Also pay with credit card or any FullBeauty Brands Credit Card</p>
+            </div>
+        </div>
 
 
-                 <button id="button">
-                    <a href="cart1.html"> ADD TO CART</a>
-                   </button>
-                <button class="btn" id="btn">Description & Details 
-                    <i class="bx bx-chevron-down" id="arrow"></i>
-                </button>
-                <p class="dropdown" id="dropdown">Catherines
-
-                    Item Number: Please Select Size
-                    This pull-on Suprema® capri is a timeless essential you'll wear on repeat season after season.
-                            <br>
-                    FABRIC: Our famous Suprema® is premium quality cotton loved for its stretch and durability. Soft to
-                    the touch, the fabric is designed to retain its shape and color wash after wash.
-                        <br>
-                    FIT: An easy, comfortable design that skims the body. Covered elastic waistband. Pockets. No
-                    closure, easy pull-on style.
-                    <br>
-                    95% Cotton, 5% Spandex
-                    <br>
-                    Machine Wash
-                    <br>
-                    Imported Plus Size Suprema®<br>
-                    Inseam Length: Petite 19", Regular 21", Tall 24"<br>
-                    Plus Sizes 0X–6X, Petites 0XWP–5XWP, Tall 0XWT-5XWT</p>
-                
-            </div>
-        </div>
-        <div class="footer">
-
-            <div class="service">
-                <h3>Customer Service</h3>
-    
-                <li>
-                    <a href="">Contact US</a>
-                </li>
-                <li>
-                    <a href="">Shopping Info</a>
-                </li>
-                <li>
-                    <a href="">shipping Info</a>
-                </li>
-                <li>
-                    <a href="">Return</a>
-                </li>
-                <li>
-                    <a href="">Exchange</a>
-                </li>
-                <li>
-                    <a href="">Billing & Payment</a>
-                </li>
-                <li>
-                    <a href="">Size & Fit</a>
-                </li>
-                <li>
-                    <a href="">International</a>
-                </li>
-                <li>
-                    <a href="">FAQ</a>
-                </li>
-    
-            </div>
-            <div class="service">
-                <h3>My Account</h3>
-                <li>
-                    <a href="">Sign in/Register</a>
-                </li>
-                <li>
-                    <a href="">Track My Order</a>
-                </li>
-                <li>
-                    <a href="">Return Order</a>
-                </li>
-                <li>
-                    <a href="">Order History</a>
-                </li>
-                <li>
-                    <a href="">Wishlist</a>
-                </li>
-                <li>
-                    <a href="">OFFERS</a>
-                </li>
-                <li>
-                    <a href="">Rewards</a>
-                </li>
-            </div>
-            <div class="service">
-                <h3>Credit Card</h3>
-                <li><a href="">Apply Now</a></li>
-                <li><a href="">Learn More</a></li>
-                <li><a href="">Pay My Bill</a></li>
-                <li><a href="">Order From Catalog</a></li>
-                <li><a href="">Request a catalog</a></li>
-    
-            </div>
-            <div class="service">
-                <h3>Catherines</h3>
-                <li><a href="">About US</a></li>
-                <li><a href="">About Brand</a></li>
-                <li><a href="">Shop NOw</a></li>
-    
-            </div>
-    
-        </div>
-        <div class="full">
-            <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw5727ff7b/oss-images/sfra/logobw-fb.svg?yocs=j_"
-                alt="">
-        </div>
-        <div class="text">
-            <p>14 Brands 1 Easy Checkout</p>
-        </div>
-        <div class="imgfooter">
+    </div>
+    <div class="lastdemo">
+        <div class="left">
             <div class="img">
-                <a href="">
-                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw880b34de/oss-images/sfra/logobw-os.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href=""> <img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwe85a0797/oss-images/sfra/logobw-ww.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href="">
-                    <img src="
-                https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw33b457dd/oss-images/sfra/logobw-rm.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href="">
-                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwd00f7085/oss-images/sfra/logobw-ca.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href="">
-                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw8905b664/oss-images/sfra/logobw-el.svg?yocs=j_"
-                        alt=""></a>
-            </div>
-            <div class="img">
-                <a href=""> <img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwad6fff12/oss-images/sfra/JV-footer-black.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href=""> <img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwa610afc4/oss-images/sfra/ActiveForAll_Logo_blk.png?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href="">
-                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwb9613011/oss-images/sfra/logobw-ia.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href="">
-                    <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw7dbfab40/oss-images/sfra/logobw-sh.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href=""> <img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwb35a5a58/oss-images/sfra/logobw-sa.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href=""><img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img">
-                <a href=""><img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-    
-            <div class="img ">
-                <a href=""><img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-            <div class="img ">
-                <a href=""><img
-                        src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
-                        alt="">
-                </a>
-            </div>
-    
-        </div>
-        <div class="lastfooter">
-            <li><a href="">Privacy Policy</a>
-                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwfcc3b18e/global/universal-footer/Privacychoicesicon.jpg?yocs=j_"
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw71372f5c/oss-images/sfra/ca-images/footer-banners/2021-ca-footer-CATALOG.jpg?yocs=j_"
                     alt="">
+            </div>
+            <div class="data">
+                <h3>Request A Free Catalog</h3>
+                <p>Fresh New Style that Fit You Beautifully, Delivered Right To Your Home.</p>
+            </div>
+            <!-- <p>signup</p> -->
+        </div>
+        <div class="right">
+            <div class="img">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwd002c8f2/ca-images/plcc-images/platinum/ca-plcc-platinum-flat.png?yocs=j_"
+                    alt="">
+            </div>
+            <div class="data">
+                <h3>Catherines Platinum Credit Card</h3>
+                <p>Save $20 on your first purchase of $25+ when you open and use a Catherines Platinum Credit Card! 1,*
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="service">
+            <h3>Customer Service</h3>
+
+            <li>
+                <a href="">Contact US</a>
             </li>
-            <li><a href="">Terms of Use</a></li>
-            <li><a href="">Your Privacy Choices</a></li>
-            <li><a href=""> California Transparency in Supply Chains Act </a></li>
-            <li><a href="">Accessibility Statement</a></li>
+            <li>
+                <a href="">Shopping Info</a>
+            </li>
+            <li>
+                <a href="">shipping Info</a>
+            </li>
+            <li>
+                <a href="">Return</a>
+            </li>
+            <li>
+                <a href="">Exchange</a>
+            </li>
+            <li>
+                <a href="">Billing & Payment</a>
+            </li>
+            <li>
+                <a href="">Size & Fit</a>
+            </li>
+            <li>
+                <a href="">International</a>
+            </li>
+            <li>
+                <a href="">FAQ</a>
+            </li>
+
         </div>
-        <div class="copy">
-            <p>©2023 FullBeauty Brands Operations, LLC. All rights reserved.</p>
-            <p>CATHERINES® is a registered trademark of FullBeauty Brands Operations, LLC.</p>
+        <div class="service">
+            <h3>My Account</h3>
+            <li>
+                <a href="">Sign in/Register</a>
+            </li>
+            <li>
+                <a href="">Track My Order</a>
+            </li>
+            <li>
+                <a href="">Return Order</a>
+            </li>
+            <li>
+                <a href="">Order History</a>
+            </li>
+            <li>
+                <a href="">Wishlist</a>
+            </li>
+            <li>
+                <a href="">OFFERS</a>
+            </li>
+            <li>
+                <a href="">Rewards</a>
+            </li>
         </div>
-    
+        <div class="service">
+            <h3>Credit Card</h3>
+            <li><a href="">Apply Now</a></li>
+            <li><a href="">Learn More</a></li>
+            <li><a href="">Pay My Bill</a></li>
+            <li><a href="">Order From Catalog</a></li>
+            <li><a href="">Request a catalog</a></li>
+
+        </div>
+        <div class="service">
+            <h3>Catherines</h3>
+            <li><a href="">About US</a></li>
+            <li><a href="">About Brand</a></li>
+            <li><a href="">Shop NOw</a></li>
+
+        </div>
+
+    </div>
+    <div class="full">
+        <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw5727ff7b/oss-images/sfra/logobw-fb.svg?yocs=j_"
+            alt="">
+    </div>
+    <div class="text">
+        <p>14 Brands 1 Easy Checkout</p>
+    </div>
+    <div class="imgfooter">
+        <div class="img">
+            <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw880b34de/oss-images/sfra/logobw-os.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href=""> <img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwe85a0797/oss-images/sfra/logobw-ww.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href="">
+                <img src="
+            https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw33b457dd/oss-images/sfra/logobw-rm.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwd00f7085/oss-images/sfra/logobw-ca.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw8905b664/oss-images/sfra/logobw-el.svg?yocs=j_"
+                    alt=""></a>
+        </div>
+        <div class="img">
+            <a href=""> <img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwad6fff12/oss-images/sfra/JV-footer-black.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href=""> <img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwa610afc4/oss-images/sfra/ActiveForAll_Logo_blk.png?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwb9613011/oss-images/sfra/logobw-ia.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href="">
+                <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw7dbfab40/oss-images/sfra/logobw-sh.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href=""> <img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwb35a5a58/oss-images/sfra/logobw-sa.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href=""><img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img">
+            <a href=""><img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+
+        <div class="img ">
+            <a href=""><img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+        <div class="img ">
+            <a href=""><img
+                    src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dw82cdcbf1/oss-images/sfra/logobw-bh.svg?yocs=j_"
+                    alt="">
+            </a>
+        </div>
+
+    </div>
+    <div class="lastfooter">
+        <li><a href="">Privacy Policy</a>
+            <img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/-/Sites-oss-Library/default/dwfcc3b18e/global/universal-footer/Privacychoicesicon.jpg?yocs=j_"
+                alt="">
+        </li>
+        <li><a href="">Terms of Use</a></li>
+        <li><a href="">Your Privacy Choices</a></li>
+        <li><a href=""> California Transparency in Supply Chains Act </a></li>
+        <li><a href="">Accessibility Statement</a></li>
+    </div>
+    <div class="copy">
+        <p>©2023 FullBeauty Brands Operations, LLC. All rights reserved.</p>
+        <p>CATHERINES® is a registered trademark of FullBeauty Brands Operations, LLC.</p>
+    </div>
+
+
 </body>
 
 <script>
-    let arr=[
-  {
-  price: 7300,
-      name: "Suprema® Tank",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw39a449f1/images/on-hover/2607_33779_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_",
-      color: "blue",
-      
-      department: "layering tank",
-      id: 1
-  },
-  {
-      price: 1200,
-      name: "Suprema® Grommet-Embellished Tee",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw483a144a/images/hi-res/2641_31552_mc_4146.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "blue",
 
-      department: "Tee",
-      id: 2
-  },
-  {
-      price: 1300,
-      name: "Suprema® Capri",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dwb2fc2524/images/hi-res/2625_33764_mc_4436.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "blue",
-      
-  department: "capri",
-      id: 3
-  },
-  {
-      price: 1500,
-      name: "Suprema® Wide Leg Pant",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dwc54ddaa6/images/hi-res/2625_05822_mc_0041.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "stone",
-      
-      department: "Pants",
-      id: "4"
-  },
-  {
-      price: 2500,
-      name: "Easy Fit Short Sleeve V-Neck Tunic",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw61f9cbd2/images/hi-res/2641_33823_mc_6671.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "pinkish",
-      
-      department: "Tee",
-      id: "5"
-  },
-  {
-      price: 1200,
-      name: "Suprema® Short",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw04239a9c/images/hi-res/2625_33769_mc_4518.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "blue",
-      
-      department: "shorts",
-      id: "6"
-  },
-  {
-      price: 2500,
-      name: "Short Sleeve Polo",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw30a5e5df/images/hi-res/2607_45250_mc_2187.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "Red",
-     
-      department: "T-shirts",
-      "id": 7
-  },
-  {
-      price:    1300,
-      name: "Timeless Tank",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dwf9a2ea57/images/hi-res/2641_33468_mc_6358.jpg?yocs=j_m_",
-      color: "white",
-      
-      department: "Tank ",
-      id: 8
-  },
-  {
-      price: 2500,
-      name: "Suprema® Maxi Skirt",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw1a38a64b/images/hi-res/2625_30648_mc_2926.jpg?yocs=j_m_",
-      color: "blue",
-     
-      department: "skirt",
-  id: 9
-  },
-  {
-      price: 2500,
-      name: "Corduroy Skirt",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dw38ab9c16/images/hi-res/2349_40671_mc_2190.jpg?yocs=j_m_",
-      color: "choclate",
-      
-      department: "skirt",
-      id: 10
-  },
-  {
-      price: 9000,
-      name: "The Knit Jean",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw07c0f041/images/hi-res/2631_33551_mc_1687.jpg?yocs=j_m_",
-      color: "blue",
-     
-      department: "jeans",
-      id: "11"
-  },
-  {
-      price: 9600,
-      name: "Right Fit Moderately Curvy Jean",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw478f656d/images/hi-res/2631_33557_mc_0380.jpg?yocs=j_m_",
-  color: "Bourbon Wash",
-      
-
-      department: "jeans",
-      id: 12
-  },
-  {
-      price: 4500,
-  name: "Boyfriend Jeans",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_ellos/default/dwd3090602/images/hi-res/2549_37522_mc_6108.jpg?yocs=j_m_",
-  color: " Light Stonewash",
-     
-      department: "jeans",
-      id: 13
-  },
-  {
-      price: 2800,
-      name: "Contour Denim Wide-Leg Jean",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Roamans/default/dwb18841a3/images/hi-res/0549_6252_mc_2352.jpg?yocs=j_m_",
-      color: "Medium Wash",
-      
-      department: "jeans",
-      id: 14
-  },
-  {
-      price: 4300,
-      name: "Straight Leg Stretch Denim Jeggings",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwd997865f/images/hi-res/2349_27122_mc_4601.jpg?yocs=j_m_",
-      color: "black",
-      
-      department: "jeans",
-      id: 15
-  },
-  {
-      price: 7800,
-      name :"Right Fit Curvy Modern Slim Leg Jean",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw1d461cf6/images/hi-res/2631_41281_mc_1330.jpg?yocs=j_m_",
-      color: " Bombay Wash",
-     
-      department: "jeans",
-      id: 16
-  },
-  {
-      price: 2341,
-      name: "Good Intentions French Terry Hoodie",
-  image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dw84dedcb4/images/hi-res/2632_05829_mc_1007.jpg?yocs=j_m_",
-      color: " Black Floral",
-
-      department: "Hoodie",
-  id: 17
-  },
-  {
-      price: 15,
-      name: "Faux Fur Trim Parka",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_ellos/default/dw2ffb8013/images/hi-res/2529_39417_mc_0756.jpg?yocs=j_m_",
-      color: "Marine Blue",
-  
-      department: "Parka",
-      id: 18
-  },
-  {
-      price: 2508,
-      name: "Long Puffer Coat",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_ellos/default/dw23ce7e12/images/hi-res/2529_38919_mc_0811.jpg?yocs=j_m_",
-      color: "Deeep Grey",
-     
-      department: "jacket",
-      id: "19"
-  },
-  {
-      price: 9900,
-      name: "Long Wool-Blend Coat",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Roamans/default/dw0f785915/images/hi-res/0501_00179_mc_0016.jpg?yocs=j_m_",
-      color: "Brown",
-     
-      department: "coat",
-      id: 20,
-  },
-  {
-      price: 2400,
-      name: "Intelligent Cotton Bacon",
-      image: "https://loremflickr.com/640/480/fashion",
-      color: "Brown",
-    
-      department: "Grocery",
-      id: 21
-  },
-  {
-      price:4500,
-      name: "Modern A-line Parka",
-      image: "https://loremflickr.com/640/480/fashion",
-      color: "offwhite",
-      
-      department: "jacket",
-      id: 22
-  },
-  {
-      price: 23,
-      name: "Full Length Wool Blend Coat",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwdd02fac1/images/hi-res/2301_29986_mc_1878.jpg?yocs=j_m_",
-      color: "white",
-      
-      department: "coat",
-      id: "23"
-  },
-  {
-      price: 33,
-      name: "Long Zip Front Hoodie",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_ellos/default/dw61793e7a/images/hi-res/2532_37484_mc_0318.jpg?yocs=j_m_",
-      color: "mist",
-      
-      department: "Hoodie",
-      id: 24
-  },
-  {
-      price: 12000,
-      name: "A-Line Zip Front Leather Jacket",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dw3ce8a776/images/hi-res/2302_12203_mc_0171.jpg?yocs=j_m_",
-      color: "Dark Berry",
-      
-      department: "Jacket",
-      id: "25"
-  },
-  {
-      price: 81,
-      name: "Side-Snap Zip-Front Parka",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_ellos/default/dw24983060/images/hi-res/2529_26521_mc_0799.jpg?yocs=j_m_",
-      color: "color 26",
-     
-      department: "Parka",
-      id: "26"
-  },
-  {
-      price: 6900,
-      name: "Shawl-Collar Fringe Jacket",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dw4524a102/images/hi-res/2308_40630_mc_1927.jpg?yocs=j_m_",
-      color: "zebra",
-      
-      department: "Jacket",
-      id: 27
-  },
-  {
-      price: 6600,
-      name: "The Milan Wide Calf Boot",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Roamans/default/dw1245bc35/images/hi-res/0035_29639_mc_1546.jpg?yocs=j_m_",
-      color: "cognac",
-      
-      department: "Shoes",
-      id: 28
-  },
-  {
-      price: 2000,
-      name: "The Mickey Bootie",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Roamans/default/dw48704b95/images/hi-res/0035_23514_mc_0448.jpg?yocs=j_m_",
-      color: "Dark Brown",
-     
-      department: "Shoes",
-      id: 29
-  },
-  {
-      price: 1500,
-      name: "The Poloma Wide Calf Boot",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Roamans/default/dw45f3e242/images/hi-res/0035_14357_mc_0475.jpg?yocs=j_m_",
-      color: "wine",
-      
-      department: "shoes",
-      id: 30
-  },
-  {
-      price: 8200,
-      name: "The Sage Shootie",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Roamans/default/dw93dd01e1/images/hi-res/0016_20716_mc_0469.jpg?yocs=j_m_",
-      color: "color 31",
-      
-      department: "shoes",
-      id: 31
-  },
-  {
-      price: 4200,
-      name: "The Aneela Wide Calf Boot",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Roamans/default/dwff6f7068/images/hi-res/0035_15363_mc_0313.jpg?yocs=j_m_",
-      color: "iceblue",
-     
-      department: "Shoes",
-      id: "32"
-  },
-  {
-      price: 800,
-      name: "Long Sleeve Knit PJ Set",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_WomanWithin/default/dw4aec6614/images/hi-res/0015_11650_mc_0910.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "bluw",
-      
-      department: "sleepwear",
-      id: 33
-  },
-  {
-      price: 6000,
-      name: "2-Piece Capri PJ Set",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_WomanWithin/default/dw453ab03d/images/hi-res/0015_05987_mc_0071.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: " Plum Burst Tie Dye",
-    
-      department: "sleepwear",
-      id: 34
-  },
-  {
-      price: 10,
-      name: "Knit Sleep Pant",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_WomanWithin/default/dw2b523377/images/hi-res/0015_17710_mc_0459.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "Floral",
-      
-      department: "sleepwear",
-      id: 35
-  },
-  {
-      price: 6700,
-      name: "2-Piece Lounge Set",
-      image: "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.327/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_WomanWithin/default/dw34f3f11b/images/on-hover/0006_07825_ma_0001.jpg?sw=556&sh=680&sm=fit&yocs=j_m_",
-      color: "blue",
-     
-      department: "sleepwear",
-      id: 36
-  },
- 
-]
-
-    const dropdownBtn = document.getElementById("btn");
-const dropdownMenu = document.getElementById("dropdown");
-const toggleArrow = document.getElementById("arrow");
-
-// Toggle dropdown function
-const toggleDropdown = function () {
-  dropdownMenu.classList.toggle("show");
-  toggleArrow.classList.toggle("arrow");
-};
-
-// Toggle dropdown open/close when dropdown button is clicked
-dropdownBtn.addEventListener("click", function (e) {
-  e.stopPropagation();
-  toggleDropdown();
-});
-let xr=[]
-let x=JSON.parse(localStorage.getItem("key")) ||[]
-// Close dropdown when dom element is clicked
-document.documentElement.addEventListener("click", function () {
-  if (dropdownMenu.classList.contains("show")) {
-    toggleDropdown();
-  }
-
-  
-});
-var slideIndex = 1;
+    let qty = document.getElementById("qty")
+    let pr = document.getElementById("pr")
+    let sub = document.getElementById("subtotal")
+    let prices = document.getElementById("prices")
+    qty.addEventListener("change", function () {
+        console.log(qty.value)
+        prices.innerText = Number(qty.value) * Number(pr.innerText)
+        sub.innerText = Number(qty.value) * Number(pr.innerText)
+    })
+    var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -2193,15 +1915,11 @@ window.onload= function () {
  }, 5000);
 }
 
-let btn=document.getElementById("button")
-  btn.addEventListener("click",function()
-  {
-    
-        let xr=arr[0]
-    localStorage.setItem("key",JSON.stringify(xr))
-    
-    
-    
-  })
+
+
+
+
+
 </script>
+
 </html>
